@@ -37,4 +37,4 @@ jobs:
         # A custom webhook event name.
         event-type: repo-released
         # JSON payload with extra information about the webhook event that your action or worklow may use.
-        client-payload: '{"repo_name": "${{ github.repository }}", "tag_name": "${{ github.event.release.tag_name }}"}'
+        client-payload: '{"repo_name": "${{ github.repository }}", "tag_name": "${{ github.event.release.tag_name }}", "ref": "${{ github.ref }}"}'
