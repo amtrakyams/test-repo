@@ -33,7 +33,7 @@ jobs:
         # A repo scoped GitHub Personal Access Token
         token: ${{ secrets.REPO_PUBLISH_TOKEN}}
         # The full name of the repository to send the dispatch.
-        repository: 'quicinc-test/test-publish'
+        repository: 'CodeLinaro/hexagon-builder'
         # A custom webhook event name.
         event-type: repo-released
         # JSON payload with extra information about the webhook event that your action or worklow may use.
