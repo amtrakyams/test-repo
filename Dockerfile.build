@@ -10,4 +10,8 @@ COPY . ./
 
 RUN npm test
 
+RUN echo "test1" > file1.txt
+
+RUN echo "test2" > file2.txt
+
 CMD ["node", "index.js"]
