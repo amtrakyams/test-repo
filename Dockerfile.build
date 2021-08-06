@@ -4,6 +4,8 @@ WORKDIR /app
 
 COPY . ./
 
+RUN mkdir results
+
 RUN tfile=$(mktemp results/XXX.txt)
 
 RUN echo "$(date)" > $tfile
