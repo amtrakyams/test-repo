@@ -4,10 +4,6 @@ WORKDIR /app
 
 COPY . ./
 
-RUN mkdir results
+RUN ./build.sh
 
-RUN tfile=$(mktemp results/XXX.txt)
-
-RUN echo "$(date)" > $tfile
-
-CMD ["bash"]
+CMD ["/bin/bash"]
